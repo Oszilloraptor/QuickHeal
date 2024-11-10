@@ -3,15 +3,33 @@
 
 QuickHeal for Turtle WoW
 
-QuickHeal gives healers fast access to all of their direct healing spells for healing party/raid members and themselves. It lets you heal the people who need it, without having to target them manually, or even having to deselect the enemy you're fighting. It gives maximum mana efficiency, and will automatically use a lower rank of healing if the target doesn't need your biggest heal, or if your mana is running low. This also works when not in a party or a raid, and this will save you mana and precious time by automatically selecting the healing spell. There are several different key bindings for constraining the scope of players that will be considered for heals.
+QuickHeal gives healers fast access to all of their direct healing spells for healing party/raid members and themselves. 
+It lets you heal the people who need it, without having to target them manually, or even having to deselect the enemy you're fighting. 
+It gives maximum mana efficiency, and will automatically use a lower rank of healing if the target doesn't need your biggest heal, or if your mana is running low. 
+This also works when not in a party or a raid, and this will save you mana and precious time by automatically selecting the healing spell. 
+There are several different key bindings for constraining the scope of players that will be considered for heals.
 
-I'm not the author of this revised version.  I modified Sulpitz's version to include an interface that allows the user to define a tank group independently of oRA.  This version works with the 1.12.1 client.
+I'm not the author of this revised version. 
+I modified Zebouski's version who modified Sulpitz's version to include an interface that allows the user to define a tank group independently of oRA.  This version works with the 1.12.1 client.
 
-I shamelessly plagiarized the most recent version of QuickHeal with integration for HealComm from
+I fixed some errors in Zebouski's https://github.com/Zebouski/QuickHeal 
+
+Who shamelessly plagiarized the most recent version of QuickHeal with integration for HealComm from
 https://github.com/Sulpitz/QuickHeal
 
-..who previously got it from
+...who previously got it from
 https://wow.curseforge.com/projects/project-2800
+
+**Non-Max-Player friendly (WIP)**
+Previous versions of QuickHeal assumed you can cast any possible healing spell your class might learn.
+This made it useless (and crashing all the time) on leveling chars.
+
+This fixed version now checks (in most circumstances) that the spell actually exists,
+and uses the highest available spell otherwise.
+
+NOTE: I only play a priest right now, and started modifying the addon at lvl 21.
+Therefore, there probably will be quite a few places where not all necessary changes were made yet.
+Leave me a bug report, including the error-message you've got ingame. Thx :*
 
 **Integration of HealComm**
 
